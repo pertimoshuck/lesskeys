@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesskeys — Privacy Policy</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    background: #000;
+    color: #f5f5f7;
+    line-height: 1.7;
+    padding: 40px 20px;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+  .updated { color: #86868b; font-size: 14px; margin-bottom: 40px; }
+  h2 { font-size: 22px; font-weight: 600; margin: 32px 0 12px; color: #f5f5f7; }
+  p { margin-bottom: 16px; color: #ccc; font-size: 16px; }
+  ul { margin: 0 0 16px 24px; color: #ccc; font-size: 16px; }
+  li { margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th, td { text-align: left; padding: 10px 16px; border-bottom: 1px solid #333; font-size: 15px; }
+  th { color: #86868b; font-weight: 500; }
+  td { color: #ccc; }
+  code { background: #1c1c1e; padding: 2px 6px; border-radius: 4px; font-size: 14px; color: #86868b; }
+  a { color: #0a84ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #333; color: #86868b; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last Updated: June 11, 2026</p>
+
+<h2>Overview</h2>
+<p>Lesskeys is a voice-to-text transcription application for macOS that processes all data locally on your device. This privacy policy explains what data Lesskeys accesses and how it is handled.</p>
+
+<h2>Data Collection</h2>
+<p><strong>Lesskeys does not collect, store, transmit, or share any personal data.</strong></p>
+<ul>
+  <li>No user accounts or registration required</li>
+  <li>No analytics or tracking</li>
+  <li>No crash reporting to external services</li>
+  <li>No advertising</li>
+  <li>No cookies or web tracking</li>
+  <li>No server-side processing</li>
+</ul>
+
+<h2>Audio Data</h2>
+<p>Lesskeys accesses your microphone solely to perform voice-to-text transcription. Audio data is:</p>
+<ul>
+  <li>Processed entirely on your device using locally-stored AI models</li>
+  <li>Never transmitted over the internet</li>
+  <li>Never stored permanently — audio buffers are discarded immediately after transcription</li>
+  <li>Never shared with any third party</li>
+</ul>
+
+<h2>Transcription History</h2>
+<p>Transcription results are stored locally on your device in the application's support directory. This data:</p>
+<ul>
+  <li>Never leaves your device</li>
+  <li>Is accessible only to you</li>
+  <li>Can be exported or deleted at any time through the app</li>
+</ul>
+
+<h2>Clipboard Data</h2>
+<p>Lesskeys's optional clipboard manager monitors your system clipboard to provide clipboard history functionality. Clipboard data is:</p>
+<ul>
+  <li>Stored locally on your device only</li>
+  <li>Never transmitted over the internet</li>
+  <li>Deletable at any time through the app</li>
+</ul>
+
+<h2>AI Models</h2>
+<p>Lesskeys downloads AI models from HuggingFace and GitHub when you first select them. This is the only network activity the app performs. After models are downloaded:</p>
+<ul>
+  <li>No further network access is required</li>
+  <li>The app functions completely offline</li>
+  <li>No data is sent to model providers</li>
+</ul>
+
+<h2>Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
+  <tr><td>Microphone</td><td>Voice recording for transcription</td><td>Yes</td></tr>
+  <tr><td>Accessibility</td><td>Auto-paste transcribed text (Direct edition only)</td><td>Optional</td></tr>
+  <tr><td>Screen Recording</td><td>System audio capture for call transcription</td><td>Optional</td></tr>
+</table>
+
+<h2>Data Storage</h2>
+<p>All data is stored locally on your Mac:</p>
+<ul>
+  <li>AI Models: <code>~/Library/Application Support/VoiceInk/Models/</code></li>
+  <li>Transcription History: <code>~/Library/Application Support/VoiceInk/</code></li>
+  <li>Clipboard History: <code>~/Library/Application Support/VoiceInk/</code></li>
+  <li>Preferences: macOS UserDefaults (local)</li>
+</ul>
+
+<h2>Third-Party Services</h2>
+<p>Lesskeys does not integrate with, send data to, or receive data from any third-party services, analytics platforms, or advertising networks <em>for product features</em>.</p>
+
+<p>The Direct (non-Mac App Store) edition uses two narrowly-scoped third-party services for billing and updates only:</p>
+
+<ul>
+  <li><strong>Gumroad</strong> — processes one-time purchases of Lesskeys and issues license keys. When you activate a license, Lesskeys sends the license key to <code>api.gumroad.com</code> to verify it; Gumroad's response (purchase date, refund/dispute status) determines whether the key is valid. Your audio, transcripts, recordings, and clipboard data are never sent to Gumroad. See <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">Gumroad's privacy policy</a>.</li>
+  <li><strong>GitHub Pages (Sparkle update feed)</strong> — the Direct edition periodically fetches an XML feed at <code>pertimoshuck.github.io/mindink/appcast.xml</code> to check for new versions. This request includes only the standard HTTP user-agent and the current app version; it does not include your license key, account information, or any audio/transcript data.</li>
+</ul>
+
+<p>The Mac App Store edition does <strong>not</strong> use Gumroad or Sparkle. Purchases and updates are handled entirely by Apple.</p>
+
+<h2>Children's Privacy</h2>
+<p>Lesskeys does not knowingly collect any information from children under the age of 13.</p>
+
+<h2>Changes to This Policy</h2>
+<p>Any changes to this privacy policy will be posted on this page with an updated revision date.</p>
+
+<h2>Contact</h2>
+<p>If you have questions about this privacy policy, please contact us at <a href="mailto:per.timoshuck@gmail.com">per.timoshuck@gmail.com</a>.</p>
+
+<div class="footer">
+  <p>Lesskeys is developed by Dmytro Tymoshchuk.</p>
+</div>
+
+</div>
+</body>
+</html>
