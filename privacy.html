@@ -37,7 +37,7 @@
 <div class="container">
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last Updated: June 11, 2026</p>
+<p class="updated">Last Updated: July 2, 2026</p>
 
 <h2>Overview</h2>
 <p>Lesskeys is a voice-to-text transcription application for macOS that processes all data locally on your device. This privacy policy explains what data Lesskeys accesses and how it is handled.</p>
@@ -70,6 +70,17 @@
   <li>Can be exported or deleted at any time through the app</li>
 </ul>
 
+<h2>Screen &amp; System Audio Recording (Call Recording)</h2>
+<p>Lesskeys includes an optional, user-initiated Call Recording feature that can record a screen or application window you select, together with system audio and (optionally) your microphone, so that you can keep a recording of a call or meeting and produce a transcript of it. This is the only feature that uses the Screen Recording permission.</p>
+<ul>
+  <li><strong>What is captured:</strong> video frames of the screen or window you explicitly select, system audio, and (if you enable it) microphone audio — only while a recording session that you started is running. Nothing is captured in the background; recording starts and stops only by your action, and an on-screen indicator is visible while recording.</li>
+  <li><strong>Purpose:</strong> solely to create your own recording file and its transcript (including speaker labels), processed entirely on your device by locally-stored AI models. There is no other use of this data — no analysis, profiling, advertising, or training.</li>
+  <li><strong>Storage:</strong> recordings and their transcripts are stored locally on your Mac in <code>~/Documents/Lesskeys/</code>, under your control.</li>
+  <li><strong>Retention:</strong> recordings are kept until you delete them. You can delete any recording at any time, in the app or in Finder.</li>
+  <li><strong>Sharing &amp; transmission:</strong> screen-recording data is never transmitted over the internet, never uploaded to any server, and never shared with any third party. Lesskeys has no server-side component.</li>
+  <li><strong>Dictation does not use screen recording:</strong> the core voice-to-text feature uses only the microphone. The Screen Recording permission is optional and is requested only for the Call Recording feature.</li>
+</ul>
+
 <h2>Clipboard Data</h2>
 <p>Lesskeys's optional clipboard manager monitors your system clipboard to provide clipboard history functionality. Clipboard data is:</p>
 <ul>
@@ -91,7 +102,7 @@
   <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
   <tr><td>Microphone</td><td>Voice recording for transcription</td><td>Yes</td></tr>
   <tr><td>Accessibility</td><td>Auto-paste transcribed text (Direct edition only)</td><td>Optional</td></tr>
-  <tr><td>Screen Recording</td><td>System audio capture for call transcription</td><td>Optional</td></tr>
+  <tr><td>Screen Recording</td><td>User-initiated recording of a selected screen/window + system audio for the Call Recording feature (see "Screen &amp; System Audio Recording" above)</td><td>Optional</td></tr>
 </table>
 
 <h2>Data Storage</h2>
